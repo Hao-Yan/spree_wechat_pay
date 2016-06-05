@@ -11,6 +11,10 @@ module Spree
     def supports?(source)
       true
     end
+    
+    def payment_profiles_supported?
+      true
+    end
 
     def provider
     end
