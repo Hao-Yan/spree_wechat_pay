@@ -12,6 +12,14 @@ module Spree
       true
     end
     
+    def provider_class
+      Spree::Gateway::WechatPay
+    end
+    
+    def payment_source_class
+      Spree::CreditCard
+    end
+    
     def payment_profiles_supported?
       true
     end
